@@ -1,0 +1,21 @@
+body{
+  margin:0%;
+}
+.header-content{
+  margin: 60px;
+}
+
+.butten{
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 7px;
+  font-size: 20px;
+  color:rgb(18, 16, 16);
+  cursor:pointer;
+ 
+}
+.bod{
+background-image: url("https://images.unsplash.com/photo-1547082299-de196ea013d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMzYyNjV8MHwxfGFsbHx8fHx8fHx8fDE3MzgyMzYxNjV8&ixlib=rb-4.0.3&q=80&w=1080");
+height: 550px;
+width: 1500px;
+}
