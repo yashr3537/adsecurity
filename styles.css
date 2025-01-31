@@ -15,10 +15,12 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2em;
 }
 
 header nav ul {
@@ -26,6 +28,7 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -57,4 +60,26 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    
+    header nav ul {
+        justify-content: center;
+    }
+    
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
 }
