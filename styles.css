@@ -1,85 +1,63 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+.bod {
+  background-image: url("https://images.unsplash.com/photo-1547082299-de196ea013d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMzYyNjV8MHwxfGFsbHx8fHx8fHx8fDE3MzgyMzYxNjV8&ixlib=rb-4.0.3&q=80&w=1080");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.header-content {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
+nav {
+  display: flex;
+ 
+  gap: 100px;
 }
 
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+.button {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
 }
 
-header nav ul li {
-    margin-left: 20px;
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
+main {
+  margin-top: 100px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
-.hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-.hero .cta-button {
-    background-color: #ff6347;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-    }
-    
-    header nav ul {
-        justify-content: center;
-    }
-    
-    .hero {
-        padding: 50px 0;
-    }
-
-    .hero h2 {
-        font-size: 1.5em;
-    }
-
-    .hero p {
-        font-size: 1em;
-    }
+p {
+  font-size: 1.2rem;
 }
